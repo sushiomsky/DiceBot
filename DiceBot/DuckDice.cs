@@ -21,7 +21,7 @@ namespace DiceBot
         HttpClient Client;
         HttpClientHandler ClientHandlr;
         public static string[] cCurrencies = new string[] { "BTC","ETH", "LTC", "DOGE","DASH","BCH","XMR","XRP","ETC","BTG","XLM","ZEC","USDT","DTP" };
-        string[] mirrors = new string[] {"https://duckdice.io/", "https://duckdice.me", "https://duckdice.net" };
+       string[] mirrors = new string[] { "https://duckdice.io/", "https://duckdice.me", "https://duckdice.net", "https://duckdice.live" };
         private int mod;
         string apiversion = "1.1.1";
         string TLEhash = null;
@@ -41,7 +41,7 @@ namespace DiceBot
             AutoWithdraw = false;
             ChangeSeed = true;
             AutoLogin = true;
-            BetURL = "https://duckdice.io";
+            BetURL = "https://duckdice.live;
             
             this.Parent = Parent;
             Name = "DuckDice";
@@ -49,7 +49,7 @@ namespace DiceBot
             TipUsingName = true;
             //Thread tChat = new Thread(GetMessagesThread);
             //tChat.Start();
-            SiteURL = "https://duckdice.io/?c=53ea652da4";
+            SiteURL = "https://duckdice.live/?c=53ea652da4"
             Currencies = cCurrencies;
             Currency = "BTC";
         }
