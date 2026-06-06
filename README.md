@@ -1,46 +1,81 @@
 DiceBot
 =======
 
-Betting Bot for <a href="https://just-dice.com">just-dice.com</a>, <a href="https://primedice.com/?ref=Seuntjie">PrimeDice.com</a>, <a href="https://www.bitdice.me/">Bitdice.me</a>, <a href="https://www.999dice.com/?20073598"> 999dice.com</a>, <a href="https://safedice.com/?r=1050">safedice.com</a>, <a href="https://betking.io/ref/357">Betking</a>, <a href="https://rollin.io/ref/8c4">Rollin.io</a>, <a href="https://betterbets.io/?ref=1304270">Betterbets.io</a>, <a href="https://monerodice.net/">Monerodice.net</a>, <a href="https://fortunejack.com/affiliate/179043/">Fortunejack.com</a>, <a href="https://www.crypto-games.net/?i=KaSwpL1Bky">crypto-games.net</a>, <a href="https://bot.seuntjie.com/mpdb">Moneypot.com (bot.seuntjie.com/mpdb)</a>, <a href="https://coinmillions.com/?a=10156">Coinmillions.com</a>, <a href="https://www.bitsler.com/?ref=seuntjie">Bitsler</a> and <a href="https://wealthydice.com/?ref=62">WealthyDice</a>
-</br>
-</br>
-No Longer Supported or Active:</br>
-<s>Magicaldice.com</s>, <s>Dadice.com</s>, <s>Coinichiwa</s>
-<br/>
-<br/>
-Binary downloads for the latest version can be found at: https://bot.seuntjie.com/botpage.aspx<br/>
-List of all downloads (old versions and beta): https://bot.seuntjie.com/downloads.aspx<br/>
-Getting started Guide: https://bot.seuntjie.com/GettingStarted.aspx<br/>
-<br/>
-<br/>
-This bot allows you to automatically bet using the martingale, labouchere, fibonacci and d'Alembert strategies and almost any other betting strategy you can think of.<br/><br/>
+DiceBot is a desktop betting automation tool for dice-style gambling sites. It can place manual and automated bets, simulate strategies, track betting history, verify rolls, and run custom Lua strategies through Programmer Mode.
 
-Bitcointalk thread: https://bitcointalk.org/index.php?topic=307425<br/>
-<br/>
-Features:
-customizable martingale<br/>
-customizable labouchere<br/>
-customizable fibonacci<br/>
-customizable d'Alembert<br/>
-Preset list for bets<br/>
-Programmer mode - write your own strategy using a simple LUA script.<br/>
-assortment of stop and reset conditions<br/>
-ZigZag - alternate between betting high and low<br/>
-auto invest/withdraw conditions<br/>
-Live and historic charts<br/>
-Complete and searchable bet history of bets placed with the bot with automatic roll verifier<br/>
-simulator to simulate your strategy before trying it with real money<br/>
-independant bet verifier<br/>
-sound and email notifications<br/>
-automatic login and starting<br/>
-built in chat for select sites<br/>
-import/export settings<br/>
-emergency stop key combination, stop the bot immediately using ctrl + shift + s regardless of which program is being focused on.<br/>
-array of stats for the current betting session<br/>
-<br/>
-<br/>
-<br/>
-Gambling is gambling no matter what you do or how good your strategy is. The house always wins if you keep playing. Winners know when to stop.<br/>
-Like any human, I make mistakes, and like any program, the bot is bound to have a few bugs. Use the bot at your own risk. Should you come accross a bug, please report it with as much detail as possible to contact@seuntjie.com
+## Documentation
 
-[<img align="right" src="http://i64.tinypic.com/106imc4.jpg">](https://twitter.com/SeuntjieDiceBot)
+The old external getting-started and forum links have been replaced with local repository documentation:
+
+- [Getting Started](docs/getting-started.md)
+- [Feature Overview](docs/features.md)
+- [Programmer Mode](docs/programmer-mode.md)
+- [Roll Verification](docs/roll-verification.md)
+
+## Supported site context
+
+Historically, DiceBot included integrations for:
+
+- Just-Dice
+- PrimeDice
+- Bitdice
+- 999dice
+- Safedice
+- Betking
+- Rollin
+- BetterBets
+- MoneroDice
+- FortuneJack
+- Crypto-Games
+- Moneypot
+- CoinMillions
+- Bitsler
+- WealthyDice
+
+Some historical integrations were later marked inactive or unsupported, including MagicalDice, DaDice, and Coinichiwa.
+
+Site support depends on the current code and on whether the remote site still exposes a compatible API.
+
+## Main features
+
+- Customizable Martingale strategy
+- Customizable Labouchere strategy
+- Customizable Fibonacci strategy
+- Customizable d'Alembert strategy
+- Preset bet lists
+- Programmer Mode with Lua scripting
+- Stop and reset conditions
+- Zig-zag betting between high and low
+- Auto invest and auto withdraw conditions where supported
+- Live and historical charts
+- Searchable local bet history
+- Automatic roll verifier for supported sites
+- Strategy simulator
+- Independent roll verifier
+- Sound and email notifications
+- Automatic login and automatic start options
+- Built-in chat for selected supported sites
+- Import and export of settings
+- Emergency stop key combination
+- Session statistics
+
+## Risk warning
+
+Gambling remains gambling regardless of automation or strategy complexity. The house edge still applies. DiceBot can automate actions and test strategies, but it cannot guarantee profit.
+
+Use the bot at your own risk. Test with simulation first, start with the smallest possible real bet, and never risk funds you cannot afford to lose.
+
+## Reporting issues
+
+When reporting a bug, include as much detail as possible:
+
+- DiceBot version or commit
+- Selected site
+- Strategy mode
+- Exact steps to reproduce
+- Expected behavior
+- Actual behavior
+- Relevant logs or screenshots
+- Whether the issue happens in simulation or only on a live site
+
+Do not include passwords, API keys, private tokens, withdrawal addresses, or other sensitive account data.
